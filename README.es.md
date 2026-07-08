@@ -15,10 +15,7 @@ Para personas con cerebro ADHD que ejecutan Claude Code y Codex en paralelo: tu 
   <code>Claude Code</code> · <code>Codex</code> · <code>ADHD-friendly</code> · <code>menu-bar</code> · <code>multi-project</code> · <code>macOS</code>
 </p>
 
-<p align="center">
-  <a href="assets/demo.mp4?raw=1"><img src="assets/demo-poster.png" width="720" alt="Watch Butler demo video"></a><br>
-  <sub>Haz click en la vista previa para ver el video demo.</sub>
-</p>
+https://github.com/user-attachments/assets/dcd7e423-e870-434b-8a9f-a94320bc962a
 
 ---
 

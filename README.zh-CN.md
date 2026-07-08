@@ -15,10 +15,7 @@
   <code>Claude Code</code> · <code>Codex</code> · <code>ADHD-friendly</code> · <code>menu-bar</code> · <code>multi-project</code> · <code>macOS</code>
 </p>
 
-<p align="center">
-  <a href="assets/demo.mp4?raw=1"><img src="assets/demo-poster.png" width="720" alt="Watch Butler demo video"></a><br>
-  <sub>点击预览图观看演示视频。</sub>
-</p>
+https://github.com/user-attachments/assets/dcd7e423-e870-434b-8a9f-a94320bc962a
 
 ---
 

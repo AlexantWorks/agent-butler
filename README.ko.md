@@ -15,10 +15,7 @@ Claude Code와 Codex를 동시에 돌리는 ADHD 성향의 사람들을 위해. 
   <code>Claude Code</code> · <code>Codex</code> · <code>ADHD-friendly</code> · <code>menu-bar</code> · <code>multi-project</code> · <code>macOS</code>
 </p>
 
-<p align="center">
-  <a href="assets/demo.mp4?raw=1"><img src="assets/demo-poster.png" width="720" alt="Watch Butler demo video"></a><br>
-  <sub>미리보기를 클릭해 데모 영상을 보세요.</sub>
-</p>
+https://github.com/user-attachments/assets/dcd7e423-e870-434b-8a9f-a94320bc962a
 
 ---
 
