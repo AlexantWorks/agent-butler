@@ -157,6 +157,7 @@ final class AppModel: ObservableObject {
     private var lastAppliedButlerState: ButlerLightState?
     private var lastAppliedOutputColor: RGBColor?
     private var hasSentScheduledOff = false
+    private var isManuallyPoweredOff = false
     private var isLoading = true
 
     var sourceColor: RGBColor {
@@ -265,6 +266,7 @@ final class AppModel: ObservableObject {
 
     func applyCurrentColor() {
         guard led.canWrite else { return }
+        guard !isManuallyPoweredOff else { return }
         guard isLightAllowedNow else {
             sendScheduledOffIfNeeded(force: false)
             return
@@ -288,13 +290,14 @@ final class AppModel: ObservableObject {
             UserDefaults.standard.set(false, forKey: Defaults.scheduleEnabled)
         }
         hasSentScheduledOff = false
+        isManuallyPoweredOff = false
         led.powerOn()
         applyCurrentColor()
     }
 
     func powerOff() {
+        isManuallyPoweredOff = true
         led.powerOff()
-        hasSentScheduledOff = true
     }
 
     func reloadButlerStatus(silent: Bool = false) {
