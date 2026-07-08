@@ -1,0 +1,13 @@
+"Butler" = "집사";
+"Open Full Board" = "전체 보드 열기";
+"Show Desktop Mini Board" = "데스크톱 미니 보드 보기";
+"Hide Desktop Mini Board" = "데스크톱 미니 보드 숨기기";
+"Launch at Login" = "로그인 시 실행";
+"Demo Mode" = "데모 모드";
+"Quit Butler" = "집사 종료";
+"Login item toggle failed" = "로그인 항목 전환 실패";
+"Your turn" = "응답할 차례입니다";
+"The agent finished and is waiting for your next step." = "에이전트가 완료되었고 다음 단계를 기다립니다.";
+"%d more" = "%d개 더 있음";
+"%d sessions waiting for over 24 hours" = "%d개 세션이 24시간 넘게 대기 중";
+"Untitled Session" = "이름 없는 세션";

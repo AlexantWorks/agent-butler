@@ -1,0 +1,13 @@
+"Butler" = "Butler";
+"Open Full Board" = "Abrir tablero completo";
+"Show Desktop Mini Board" = "Mostrar mini tablero de escritorio";
+"Hide Desktop Mini Board" = "Ocultar mini tablero de escritorio";
+"Launch at Login" = "Abrir al iniciar";
+"Demo Mode" = "Modo demo";
+"Quit Butler" = "Salir de Butler";
+"Login item toggle failed" = "No se pudo cambiar el inicio automático";
+"Your turn" = "Tu turno";
+"The agent finished and is waiting for your next step." = "El agent terminó y espera tu siguiente paso.";
+"%d more" = "%d más";
+"%d sessions waiting for over 24 hours" = "%d sesiones llevan más de 24 horas esperando";
+"Untitled Session" = "Sesión sin título";

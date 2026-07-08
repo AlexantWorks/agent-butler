@@ -1,0 +1,11 @@
+{
+  "_comment": "Butler · project buckets (coarse but reliable). Match order: cwd contains a path hint, OR the task/title contains a keyword. Customize to your own projects — these are just examples.",
+  "buckets": [
+    { "name": "Frontend", "cwd": ["/web", "/app", "/frontend", "/ui"], "keywords": ["react", "next", "vue", "svelte", "css", "tailwind", "component", "frontend"] },
+    { "name": "Backend",  "cwd": ["/api", "/server", "/backend"], "keywords": ["api", "server", "database", "endpoint", "auth", "backend", "migration"] },
+    { "name": "Infra",    "cwd": ["/infra", "/deploy", "/ops"], "keywords": ["docker", "deploy", "ci", "terraform", "k8s", "infra", "pipeline"] },
+    { "name": "Docs",     "cwd": ["/docs"], "keywords": ["readme", "docs", "documentation", "changelog"] },
+    { "name": "Personal", "cwd": ["/personal", "/side"], "keywords": ["personal", "side project", "hobby"] }
+  ],
+  "fallback": "Other"
+}

@@ -1,0 +1,14 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Butler small icon">
+  <!--
+    Logo v3 小尺寸变体 · 只用于 iconset 的 16px / 32px 档。
+    简化规则:去渐变去投影、卡片减到 3 张、描边 ≥1.5px(16px 下仍 ≥0.75 物理像素)。
+    构图与 1024 版同源:左列 amber 卡在上 + 描线卡在下,右列墨卡错位。
+  -->
+  <rect x="1" y="1" width="30" height="30" rx="7.5" fill="#f7f6f2" stroke="#c9c4b8" stroke-width="1"/>
+  <!-- amber 等你卡(不倾斜:16px 下倾斜只会发虚) -->
+  <rect x="6" y="6.5" width="9" height="8" rx="2.5" fill="#c05f10"/>
+  <!-- 搁置描线卡 -->
+  <rect x="6.75" y="18.25" width="7.5" height="6.5" rx="2" fill="none" stroke="#a39d8f" stroke-width="1.5"/>
+  <!-- 跑着墨卡(右列,错位下沉) -->
+  <rect x="18" y="10.5" width="9" height="8" rx="2.5" fill="#2b2a26"/>
+</svg>

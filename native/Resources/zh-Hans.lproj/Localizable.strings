@@ -1,0 +1,13 @@
+"Butler" = "老管家";
+"Open Full Board" = "打开完整看板";
+"Show Desktop Mini Board" = "显示桌面看板";
+"Hide Desktop Mini Board" = "隐藏桌面看板";
+"Launch at Login" = "开机自启";
+"Demo Mode" = "演示模式";
+"Quit Butler" = "退出老管家";
+"Login item toggle failed" = "登录项切换失败";
+"Your turn" = "该你了";
+"The agent finished and is waiting for your next step." = "跑完了，等你下一步";
+"%d more" = "另有 %d 件";
+"%d sessions waiting for over 24 hours" = "%d 件等你超过 24 小时";
+"Untitled Session" = "未命名会话";

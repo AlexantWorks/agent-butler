@@ -1,0 +1,89 @@
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Butler — a lit-up card on the board">
+  <!--
+    Butler Logo
+    构图:三列高低错落的卡片 = 真实看板(等你/跑着/搁置),
+    唯一一张 amber 卡微倾 2.4° 浮起 = 产品唯一的注意力税。
+    分层(icns 渲染用):
+      #layer-base  底 — 纸面 squircle + 纵向纸感渐变 + 内描边 + 顶部内高光
+      #layer-body  主体 — 墨色/描线卡片(跑着/搁置)
+      #layer-hero  高光 — amber 卡 + 投影 + 顶缘高光
+    16/32px 请改用 logo-v3-small.svg(本图细节在小尺寸会糊)。
+  -->
+  <defs>
+    <!-- 纸面:极轻的暖色纵向渐变,不是纯白 -->
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#fdfdfb"/>
+      <stop offset=".55" stop-color="#f8f7f4"/>
+      <stop offset="1"   stop-color="#efede7"/>
+    </linearGradient>
+    <!-- 顶部内高光:纸的受光面 -->
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"  stop-color="#ffffff" stop-opacity=".9"/>
+      <stop offset=".2" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- amber 卡:上浅下深,像被灯照着 -->
+    <linearGradient id="amber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e39a45"/>
+      <stop offset="1" stop-color="#ad500a"/>
+    </linearGradient>
+    <!-- amber 卡顶缘高光 -->
+    <linearGradient id="amberSheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#ffffff" stop-opacity=".55"/>
+      <stop offset=".45" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- 墨卡:近黑但有温度 -->
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33312d"/>
+      <stop offset="1" stop-color="#1f1e1b"/>
+    </linearGradient>
+    <!-- amber 卡投影:暖棕色,不是死黑 -->
+    <filter id="lift" x="-40%" y="-40%" width="180%" height="200%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#7c3f0d" flood-opacity=".32"/>
+    </filter>
+    <!-- 墨卡的贴纸浅影 -->
+    <filter id="rest" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#4a4438" flood-opacity=".14"/>
+    </filter>
+    <clipPath id="iconClip">
+      <rect x="100" y="100" width="824" height="824" rx="186"/>
+    </clipPath>
+  </defs>
+
+  <!-- ════ 底 · layer-base ════ -->
+  <g id="layer-base">
+    <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#paper)"/>
+    <g clip-path="url(#iconClip)">
+      <rect x="100" y="100" width="824" height="300" fill="url(#sheen)"/>
+    </g>
+    <!-- 内描边:hairline,压住边缘 -->
+    <rect x="102" y="102" width="820" height="820" rx="184" fill="none"
+          stroke="#c9c4b8" stroke-opacity=".55" stroke-width="4"/>
+  </g>
+
+  <!-- ════ 主体 · layer-body(跑着=墨色,搁置=描线;三列高低错落) ════ -->
+  <g id="layer-body">
+    <!-- 列1(amber 卡下方):墨卡 + 描线卡 -->
+    <rect x="222" y="468" width="168" height="128" rx="26" fill="url(#ink)" filter="url(#rest)"/>
+    <rect x="227" y="641" width="158" height="104" rx="23" fill="none"
+          stroke="#b6b0a3" stroke-width="9"/>
+    <!-- 列2:墨卡(高一点) + 次级墨卡 -->
+    <rect x="428" y="272" width="168" height="118" rx="26" fill="url(#ink)" filter="url(#rest)"/>
+    <rect x="428" y="435" width="168" height="140" rx="26" fill="#57534e" filter="url(#rest)"/>
+    <rect x="433" y="620" width="158" height="96" rx="22" fill="none"
+          stroke="#c2bcb0" stroke-width="9"/>
+    <!-- 列3(搁置):只有描线,退到最远 -->
+    <rect x="639" y="325" width="158" height="108" rx="23" fill="none"
+          stroke="#b6b0a3" stroke-width="9"/>
+    <rect x="639" y="480" width="158" height="98" rx="22" fill="none"
+          stroke="#c9c4b8" stroke-width="9"/>
+  </g>
+
+  <!-- ════ 高光 · layer-hero(唯一的 amber 卡,微倾浮起) ════ -->
+  <g id="layer-hero" transform="rotate(-2.4 306 348)">
+    <rect x="218" y="270" width="176" height="156" rx="30" fill="url(#amber)" filter="url(#lift)"/>
+    <rect x="218" y="270" width="176" height="156" rx="30" fill="url(#amberSheen)"/>
+    <!-- 卡面上两道"手写目的"刻痕:让它是一张便签,不是色块 -->
+    <rect x="248" y="316" width="112" height="16" rx="8" fill="#ffffff" fill-opacity=".62"/>
+    <rect x="248" y="352" width="76"  height="16" rx="8" fill="#ffffff" fill-opacity=".38"/>
+  </g>
+</svg>

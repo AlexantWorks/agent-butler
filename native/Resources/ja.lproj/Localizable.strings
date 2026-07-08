@@ -1,0 +1,13 @@
+"Butler" = "バトラー";
+"Open Full Board" = "フルボードを開く";
+"Show Desktop Mini Board" = "デスクトップミニボードを表示";
+"Hide Desktop Mini Board" = "デスクトップミニボードを隠す";
+"Launch at Login" = "ログイン時に起動";
+"Demo Mode" = "デモモード";
+"Quit Butler" = "バトラーを終了";
+"Login item toggle failed" = "ログイン項目の切り替えに失敗しました";
+"Your turn" = "あなたの番です";
+"The agent finished and is waiting for your next step." = "エージェントが完了し、次の操作を待っています。";
+"%d more" = "ほか %d 件";
+"%d sessions waiting for over 24 hours" = "%d 件が 24 時間以上あなた待ちです";
+"Untitled Session" = "無題のセッション";
