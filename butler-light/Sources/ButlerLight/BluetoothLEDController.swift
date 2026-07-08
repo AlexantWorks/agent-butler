@@ -86,6 +86,7 @@ final class BluetoothLEDController: NSObject, ObservableObject {
     }
 
     func apply(color: RGBColor) {
+        send(ELKBledomProtocol.powerOn())
         send(ELKBledomProtocol.setColor(color))
         send(ELKBledomProtocol.setCommunityColor(color))
     }

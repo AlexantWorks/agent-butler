@@ -27,7 +27,9 @@ clear_bundle_xattrs() {
 }
 
 cd "$ROOT_DIR"
-python3 scripts/make_icon.py >/dev/null
+if [[ ! -f "Resources/AppIcon.icns" ]]; then
+  python3 scripts/make_icon.py >/dev/null
+fi
 swift build -c release
 
 mkdir -p "$MACOS_DIR" "$RESOURCES_DIR"

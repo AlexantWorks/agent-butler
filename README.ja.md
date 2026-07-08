@@ -124,4 +124,4 @@ Butler app UI は英語をデフォルトとし、中国語、日本語、韓国
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+AGPL-3.0-only — see [LICENSE](LICENSE)。Butler をベースにした製品は、対応するソースコードを同じライセンスで公開する必要があります。

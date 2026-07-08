@@ -124,4 +124,4 @@ The Butler app UI ships in **English** (default, follows your system language) w
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+AGPL-3.0-only — see [LICENSE](LICENSE). Products based on Butler must keep their corresponding source code available under the same license.

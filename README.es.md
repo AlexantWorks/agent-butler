@@ -124,4 +124,4 @@ La UI de Butler viene en inglés por defecto e incluye chino, japonés, coreano 
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+AGPL-3.0-only — see [LICENSE](LICENSE). Los productos basados en Butler deben mantener disponible su código fuente correspondiente bajo la misma licencia.
