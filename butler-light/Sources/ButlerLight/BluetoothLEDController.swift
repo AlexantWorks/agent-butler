@@ -78,7 +78,7 @@ final class BluetoothLEDController: NSObject, ObservableObject {
     }
 
     func powerOn() {
-        send(ELKBledomProtocol.powerOn())
+        sendSequence([ELKBledomProtocol.powerOn(), ELKBledomProtocol.powerOn()])
     }
 
     func powerOff() {
@@ -86,9 +86,32 @@ final class BluetoothLEDController: NSObject, ObservableObject {
     }
 
     func apply(color: RGBColor) {
-        send(ELKBledomProtocol.powerOn())
-        send(ELKBledomProtocol.setColor(color))
-        send(ELKBledomProtocol.setCommunityColor(color))
+        sendSequence(colorCommands(for: color))
+    }
+
+    private func colorCommands(for color: RGBColor) -> [[UInt8]] {
+        let characteristicID = writeCharacteristic?.uuid.uuidString.uppercased()
+        if characteristicID == ELKBledomProtocol.primaryWriteCharacteristicUUID {
+            return [
+                ELKBledomProtocol.powerOn(),
+                ELKBledomProtocol.setColor(color),
+                ELKBledomProtocol.setColor(color)
+            ]
+        }
+
+        return [
+            ELKBledomProtocol.powerOn(),
+            ELKBledomProtocol.setCommunityColor(color),
+            ELKBledomProtocol.setCommunityColor(color)
+        ]
+    }
+
+    private func sendSequence(_ commands: [[UInt8]]) {
+        for (index, command) in commands.enumerated() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.12 * Double(index)) { [weak self] in
+                self?.send(command)
+            }
+        }
     }
 
     private func send(_ bytes: [UInt8]) {
