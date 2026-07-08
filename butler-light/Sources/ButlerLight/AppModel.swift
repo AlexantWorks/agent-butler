@@ -283,10 +283,11 @@ final class AppModel: ObservableObject {
     }
 
     func powerOn() {
-        guard isLightAllowedNow else {
-            sendScheduledOffIfNeeded(force: true)
-            return
+        if scheduleEnabled && !isLightAllowedNow {
+            scheduleEnabled = false
+            UserDefaults.standard.set(false, forKey: Defaults.scheduleEnabled)
         }
+        hasSentScheduledOff = false
         led.powerOn()
         applyCurrentColor()
     }
